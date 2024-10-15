@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import LoginScreen from './src/screens/Auth/LoginScreen';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -72,12 +73,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         {/*  <Header /> */}
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Text>Hello</Text>
-        </View>
+        <LoginScreen />
       </ScrollView>
     </SafeAreaView>
   );
